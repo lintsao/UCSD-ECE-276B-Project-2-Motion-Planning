@@ -13,7 +13,7 @@ pip3 install -r requirements.txt
 
 ```
 cd starter_code
-python3 main.py
+python3 main.py [planner_name]
 ```
 
 ## Contributing
