@@ -153,7 +153,7 @@ def runtest(planner_name, mapfile, start, goal, verbose = True):
   if (planner_name == 'default'):
     MP = Planner.MyPlanner(boundary, blocks) # TODO: replace this with your own planner implementation
   elif (planner_name == 'astar'):
-    MP = Planner.AStarPlanner(boundary, blocks, resolution=0.1, eps=1.0)
+    MP = Planner.AStarPlanner(boundary, blocks, resolution=0.5, eps=1.0)
   else:
     dim = np.array([(boundary[0][0], boundary[0][3]), 
                     (boundary[0][1], boundary[0][4]), 
@@ -218,11 +218,6 @@ def runtest(planner_name, mapfile, start, goal, verbose = True):
   path_tmp = MP.plan(start, goal)
 
   toc(t0,"Planning")
-
-  if (path_tmp != None):
-    pass
-  else:
-    return False, 0, []
   
   try:
     if (len(path_tmp)):
