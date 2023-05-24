@@ -1,0 +1,5 @@
+numpy
+matplotlib
+Rtree==0.8.2
+plotly==5.14.1
+ipympl
