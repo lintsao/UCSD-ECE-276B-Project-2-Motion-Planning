@@ -227,6 +227,7 @@ def runtest(planner_name, mapfile, start, goal, verbose = True):
   
   curr = 1
   cost = 0
+  
   while (curr < len(path_tmp)):
     cost += ((path_tmp[curr][0] - path_tmp[curr - 1][0])**2 +
              (path_tmp[curr][1] - path_tmp[curr - 1][1])**2 + 
