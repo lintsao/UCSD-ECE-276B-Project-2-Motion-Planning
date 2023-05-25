@@ -84,6 +84,17 @@ def draw_block_list(ax,blocks):
     h = ax.add_collection3d(pc)
     return h
   
+def check_out_of_bound(point, boundary):
+  if(
+    point[0] < boundary[0] or point[0] > boundary[3] or
+    point[1] < boundary[1] or point[1] > boundary[4] or
+    point[2] < boundary[2] or point[2] > boundary[5]
+    ):
+    print(f"Out of bound happened at point {point}")
+    return True
+  
+  return False
+  
 def check_collision(line_segment, aabb):
   if(
     line_segment['start_x'] > aabb['min_x'] and line_segment['start_x'] < aabb['max_x'] and
@@ -153,7 +164,7 @@ def runtest(planner_name, mapfile, start, goal, verbose = True):
   if (planner_name == 'default'):
     MP = Planner.MyPlanner(boundary, blocks) # TODO: replace this with your own planner implementation
   elif (planner_name == 'astar'):
-    MP = Planner.AStarPlanner(boundary, blocks, resolution=0.5, eps=1.0)
+    MP = Planner.AStarPlanner(boundary, blocks, resolution=0.1, eps=5.0)
   else:
     dim = np.array([(boundary[0][0], boundary[0][3]), 
                     (boundary[0][1], boundary[0][4]), 
@@ -201,7 +212,7 @@ def runtest(planner_name, mapfile, start, goal, verbose = True):
       MP = RRTStarBidirectionalHeuristic(X, Q, tuple(start), tuple(goal), max_samples, r, prc, rewire_count)
 
     elif (planner_name == 'rrt_connect'):
-      Q = np.array([(1, 1)])  # length of tree edges
+      Q = np.array([(3)])  # length of tree edges
       r = 0.05  # length of smallest edge to check for intersection with obstacles
       max_samples = 10000000  # max number of samples to take before timing out
       prc = 0.1  # probability of checking for a connection to goal
@@ -227,7 +238,7 @@ def runtest(planner_name, mapfile, start, goal, verbose = True):
   
   curr = 1
   cost = 0
-  
+
   while (curr < len(path_tmp)):
     cost += ((path_tmp[curr][0] - path_tmp[curr - 1][0])**2 +
              (path_tmp[curr][1] - path_tmp[curr - 1][1])**2 + 
@@ -240,9 +251,20 @@ def runtest(planner_name, mapfile, start, goal, verbose = True):
   if verbose:
     ax.plot(path[:,0],path[:,1],path[:,2],'r-')
 
+  plt.savefig(f"{planner_name}_{mapfile.split('/')[2].split('.')[0]}_1.png")
+  ax.view_init(elev=90, azim=-90, roll=0)
+  plt.savefig(f"{planner_name}_{mapfile.split('/')[2].split('.')[0]}_2.png")
+
   # TODO: You should verify whether the path actually intersects any of the obstacles in continuous space
   # TODO: You can implement your own algorithm or use an existing library for segment and 
   #       axis-aligned bounding box (AABB) intersection
+
+  for i in range(len(path)):
+    out_of_bound = check_out_of_bound(path[i], boundary[0])
+
+    if (out_of_bound):
+      break
+
   for block in blocks:
     block_dict = {'min_x': block[0], 'min_y': block[1], 'min_z': block[2], 
                   'max_x': block[3], 'max_y': block[4], 'max_z': block[5]}
@@ -271,9 +293,9 @@ def runtest(planner_name, mapfile, start, goal, verbose = True):
       break
     
   goal_reached = sum((path[-1]-goal)**2) <= 0.1
-  print(f"goal_reached: {goal_reached}, collision: {collision}")
+  print(f"goal_reached: {goal_reached}, collision: {collision}, out of bound: {out_of_bound}")
   print(f"cost: {cost}")
-  success = (not collision) and goal_reached
+  success = (not out_of_bound) and (not collision) and goal_reached
   pathlength = np.sum(np.sqrt(np.sum(np.diff(path,axis=0)**2,axis=1)))
   return success, pathlength, path
   

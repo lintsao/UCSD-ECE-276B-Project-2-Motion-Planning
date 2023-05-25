@@ -1,0 +1,469 @@
+Astar
+res: 0.5
+eps: 1.0
+
+Running single cube test...
+
+Use astar
+Total steps: 45
+Planning took: 0.39510607719421387 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 8.342416792648603
+Success: True
+Path length: 8
+
+
+Running maze test...
+
+Use astar
+Total steps: 14425
+Planning took: 8.142614841461182 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 79.89913045768215
+Success: True
+Path length: 79
+
+
+Running flappy bird test...
+
+Use astar
+Total steps: 404675
+Planning took: 117.6500871181488 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 26.57594513539337
+Success: True
+Path length: 26
+
+
+Running monza test...
+
+Use astar
+Total steps: 3231
+Planning took: 0.7048530578613281 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 40.997571147964976
+Success: True
+Path length: 40
+
+
+Running window test...
+
+Use astar
+Total steps: 9719
+Planning took: 4.260317802429199 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 30.684608575474826
+Success: True
+Path length: 30
+
+
+Running tower test...
+
+Use astar
+Total steps: 2384
+Planning took: 2.1177659034729004 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 34.38951151444872
+Success: True
+Path length: 34
+
+
+Running room test...
+
+Use astar
+Total steps: 852
+Planning took: 0.6196727752685547 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 12.071067811865477
+Success: True
+Path length: 12
+
+
+＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃
+
+
+Astar
+res: 0.5
+eps: 5.0
+
+Running single cube test...
+
+Use astar
+Total steps: 11
+Planning took: 0.41459012031555176 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 8.342416792648603
+Success: True
+Path length: 8
+
+
+Running maze test...
+
+Use astar
+Total steps: 10583
+Planning took: 5.349354028701782 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 79.89913045768215
+Success: True
+Path length: 79
+
+
+Running flappy bird test...
+
+Use astar
+Total steps: 28790
+Planning took: 12.899111270904541 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 35.11351891433729
+Success: True
+Path length: 35
+
+
+Running monza test...
+
+Use astar
+Total steps: 977
+Planning took: 0.23298406600952148 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 40.997571147964976
+Success: True
+Path length: 40
+
+
+Running window test...
+
+Use astar
+Total steps: 75
+Planning took: 0.2131938934326172 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 31.72755758242834
+Success: True
+Path length: 31
+
+
+Running tower test...
+
+Use astar
+Total steps: 465
+Planning took: 0.48526597023010254 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 35.07167426925294
+Success: True
+Path length: 35
+
+
+Running room test...
+
+Use astar
+Total steps: 86
+Planning took: 0.10689687728881836 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 12.071067811865477
+Success: True
+Path length: 12
+
+
+＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃
+Running single cube test...
+
+Use rrt
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 7 samples
+Planning took: 0.00446319580078125 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 9.163891373932108
+Success: True
+Path length: 9
+
+
+Running maze test...
+
+Use rrt
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 10881 samples
+Planning took: 6.016019821166992 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 110.53701840487915
+Success: True
+Path length: 110
+
+
+Running flappy bird test...
+
+Use rrt
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 810 samples
+Planning took: 0.20771574974060059 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 42.16688362650913
+Success: True
+Path length: 42
+
+
+Running monza test...
+
+Use rrt
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 42244 samples
+Planning took: 11.121651887893677 sec.
+
+goal_reached: True, collision: None, out of bound: False
+cost: 109.19984056036989
+Success: True
+Path length: 109
+
+
+Running window test...
+
+Use rrt
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 258 samples
+Planning took: 0.10096597671508789 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 31.304131127714275
+Success: True
+Path length: 31
+
+
+Running tower test...
+
+Use rrt
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 1310 samples
+Planning took: 0.36417722702026367 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 45.072954014894805
+Success: True
+Path length: 45
+
+
+Running room test...
+
+Use rrt
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 458 samples
+Planning took: 0.16030073165893555 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 23.362394788081986
+Success: True
+Path length: 23
+
+
+＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃
+
+
+Running single cube test...
+
+Use rrt_star
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 3 samples
+Planning took: 0.012303829193115234 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 7.968090761780836
+Success: True
+Path length: 7
+
+
+Running maze test...
+
+Use rrt_star
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 10568 samples
+Planning took: 87.16722083091736 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 78.93007396733395
+Success: True
+Path length: 78
+
+
+Running flappy bird test...
+
+Use rrt_star
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 562 samples
+Planning took: 5.2176430225372314 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 33.69340313442833
+Success: True
+Path length: 33
+
+
+Running monza test...
+
+Use rrt_star
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 2427 samples
+Planning took: 28.791125059127808 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 79.12097860893165
+Success: True
+Path length: 79
+
+
+Running window test...
+
+Use rrt_star
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 154 samples
+Planning took: 0.8536603450775146 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 25.38505335702259
+Success: True
+Path length: 25
+
+
+Running tower test...
+
+Use rrt_star
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 1550 samples
+Planning took: 18.846843004226685 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 31.556351614197112
+Success: True
+Path length: 31
+
+
+Running room test...
+
+Use rrt_star
+Obstacle is not None
+Can connect to goal
+Checking if can connect to goal at 119 samples
+Planning took: 0.9907479286193848 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 12.237375796512811
+Success: True
+Path length: 12
+
+
+＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃＃
+
+
+Running single cube test...
+
+Use rrt_connect
+Obstacle is not None
+Planning took: 0.04067492485046387 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 15.085639717839566
+Success: True
+Path length: 15
+
+
+Running maze test...
+
+Use rrt_connect
+Obstacle is not None
+Planning took: 2.2707958221435547 sec.
+
+Out of bound happened at point [0.03970848 3.34284829 6.57215452]
+goal_reached: True, collision: False, out of bound: True
+cost: 66.02252514809412
+Success: False
+Path length: 66
+
+
+Running flappy bird test...
+
+Use rrt_connect
+Obstacle is not None
+Planning took: 0.5920960903167725 sec.
+
+Out of bound happened at point [ 3.85234716  2.89014624 -0.54340869]
+goal_reached: True, collision: False, out of bound: True
+cost: 48.00110030991049
+Success: False
+Path length: 48
+
+
+Running monza test...
+
+Use rrt_connect
+Obstacle is not None
+Planning took: 0.2841799259185791 sec.
+
+Out of bound happened at point [-0.07645104 15.52246415  4.6882509 ]
+goal_reached: True, collision: False, out of bound: True
+cost: 51.340914969027864
+Success: False
+Path length: 51
+
+
+Running window test...
+
+Use rrt_connect
+Obstacle is not None
+Planning took: 0.09566807746887207 sec.
+
+goal_reached: True, collision: False, out of bound: False
+cost: 45.000250748745955
+Success: True
+Path length: 45
+
+
+Running tower test...
+
+Use rrt_connect
+Obstacle is not None
+Planning took: 0.6903660297393799 sec.
+
+Out of bound happened at point [5.42222087 3.3475019  0.68673895]
+goal_reached: True, collision: False, out of bound: True
+cost: 36.66217297917076
+Success: False
+Path length: 36
+
+
+Running room test...
+
+Use rrt_connect
+Obstacle is not None
+Planning took: 0.15423178672790527 sec.
+
+Out of bound happened at point [7.74336469 4.78501865 3.08578855]
+goal_reached: True, collision: False, out of bound: True
+cost: 27.002295386067516
+Success: False
+Path length: 27

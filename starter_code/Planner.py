@@ -160,7 +160,7 @@ class AStarPlanner:
 
       step = 0
 
-      while (self.open):
+      while (self.goal_tuple not in self.closed):
           # mindisttogoal = 1000000
           f_i, g_i, node = heapq.heappop(self.open)
           self.closed.add(node)

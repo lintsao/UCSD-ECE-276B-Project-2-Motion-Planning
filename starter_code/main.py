@@ -24,11 +24,11 @@ if __name__=="__main__":
   
   test_single_cube(args.planner_name)
   test_maze(args.planner_name) 
-  test_flappy_bird(args.planner_name) # Astar: 0.5 fails, 0.1 ok
-  test_monza(args.planner_name) # RRT fail
+  test_flappy_bird(args.planner_name)
+  test_monza(args.planner_name)
   test_window(args.planner_name)
   test_tower(args.planner_name)
   test_room(args.planner_name)
-  
+
   plt.show(block=True)
   
