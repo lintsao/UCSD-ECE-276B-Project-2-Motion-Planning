@@ -212,8 +212,8 @@ def runtest(planner_name, mapfile, start, goal, verbose = True):
       MP = RRTStarBidirectionalHeuristic(X, Q, tuple(start), tuple(goal), max_samples, r, prc, rewire_count)
 
     elif (planner_name == 'rrt_connect'):
-      Q = np.array([(3)])  # length of tree edges
-      r = 0.05  # length of smallest edge to check for intersection with obstacles
+      Q = np.array([(1)])  # length of tree edges
+      r = 0.01  # length of smallest edge to check for intersection with obstacles
       max_samples = 10000000  # max number of samples to take before timing out
       prc = 0.1  # probability of checking for a connection to goal
 

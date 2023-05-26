@@ -74,6 +74,7 @@ class RRTConnect(RRTBase):
             if status != Status.TRAPPED:
                 x_new, connect_status = self.connect(1, x_new)
                 if connect_status == Status.REACHED:
+                    print(self.samples_taken)
                     self.unswap()
                     first_part = self.reconstruct_path(0, self.x_init, self.get_nearest(0, x_new))
                     second_part = self.reconstruct_path(1, self.x_goal, self.get_nearest(1, x_new))
