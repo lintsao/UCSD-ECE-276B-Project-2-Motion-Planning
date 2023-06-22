@@ -1,7 +1,6 @@
 # UCSD ECE 276B Project 2: Motion Planning
 
-This project will focus on comparing the performance of search-based and sampling-based motion planning algorithms in 3-D Euclidean space. You are provided with a set of 3-D environments described by a rectangular outer boundary and a set of rectangular obstacle blocks. Each rectangle is described by a 9-dimensional vector, specifying its lower left corner (xmin, ymin, zmin), its upper right corner (xmax, ymax, zmax), and its RGB color (for visualization). The start xs ∈ R3 and goal xτ ∈ R 3
-coordinates are also specified for each of the available environments. The provided sample code includes a baseline planner which moves greedily toward the goal. This planner gets stuck in complex environments and is not very careful with collision checking
+This project will focus on comparing the performance of search-based and sampling-based motion planning algorithms in 3-D Euclidean space. You are provided with a set of 3-D environments described by a rectangular outer boundary and a set of rectangular obstacle blocks. Each rectangle is described by a 9-dimensional vector, specifying its lower left corner (xmin, ymin, zmin), its upper right corner (xmax, ymax, zmax), and its RGB color (for visualization). The start xs ∈ R3 and goal xτ ∈ R3 coordinates are also specified for each of the available environments. The provided sample code includes a baseline planner which moves greedily toward the goal. This planner gets stuck in complex environments and is not very careful with collision checking.
 
 ## Installation
 To get started with the object detection project, follow these steps:
