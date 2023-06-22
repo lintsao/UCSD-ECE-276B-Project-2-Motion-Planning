@@ -12,8 +12,8 @@ This project will focus on comparing the performance of search-based and samplin
 
 1. Clone this repository:
   ```bash
-  git clone https://github.com/homerun-beauty/ECE-276B-PR2.git
-  cd ECE-276B-PR2
+  git clone https://github.com/homerun-beauty/UCSD-ECE-276B-Project-2-Motion-Planning.git
+  cd UCSD-ECE-276B-Project-2-Motion-Planning
   ```
 
 2. Create a new virtual environment:
