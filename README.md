@@ -40,7 +40,7 @@ Replace &lt;planner-name> with the following options:
 - ```rrt``` RRT (Rapidly-Exploring Random Tree): Randomized sampling-based motion planning algorithm.
 - ```rrt_star``` RRT* (Rapidly-Exploring Random Tree Star): Optimized version of RRT with improved path quality.
 - ```rrt_star_bid``` Bidirectional RRT*: RRT* variant with exploration from both start and goal states.
-- ``` rrt_star_bid_h``` Bidirectional RRT* (with heuristic): Heuristic-guided variant of bidirectional RRT* algorithm.
+- ```rrt_star_bid_h``` Bidirectional RRT* (with heuristic): Heuristic-guided variant of bidirectional RRT* algorithm.
 - ```rrt_connect``` RRT-Connect: Connecting trees variant of RRT for motion planning.
 
 ## Contributing
