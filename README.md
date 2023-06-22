@@ -3,8 +3,7 @@
 This project will focus on comparing the performance of search-based and sampling-based motion planning algorithms in 3-D Euclidean space. You are provided with a set of 3-D environments described by a rectangular outer boundary and a set of rectangular obstacle blocks. Each rectangle is described by a 9-dimensional vector, specifying its lower left corner ($x_{min}$, $y_{min}$, $z_{min}$), its upper right corner ($x_{max}$, $y_{max}$, $z_{max}$), and its RGB color (for visualization). The start $x_s$ ∈ $R^3$ and goal $x_τ$ ∈ $R^3$ coordinates are also specified for each of the available environments. The provided sample code includes a baseline planner which moves greedily toward the goal. This planner gets stuck in complex environments and is not very careful with collision checking.
 
 <p align="center">
-  <img src="https://github.com/homerun-beauty/UCSD-ECE-276B-Project-2-Motion-Planning/assets/60029900/e74d65dd-aea2-4d7f-9542-0cb5e9b09007
-" alt="Project Image" width="400">
+  <img src="https://github.com/homerun-beauty/UCSD-ECE-276B-Project-2-Motion-Planning/assets/60029900/761258aa-20d3-4792-a84c-a8f9ed142cb9" alt="Project Image" width="400">
   <img src="https://github.com/homerun-beauty/UCSD-ECE-276B-Project-2-Motion-Planning/assets/60029900/fda80b7f-5e42-4eb3-a98f-84cf2c133cfb" alt="Project Image" width="400">
 </p>
 <p align="center">Here is a visual representation of our project in action. The agent is inside the maze environment. </p>
