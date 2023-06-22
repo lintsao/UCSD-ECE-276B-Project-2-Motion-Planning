@@ -7,7 +7,7 @@ This project will focus on comparing the performance of search-based and samplin
 </p>
 <p align="center">Here is a visual representation of our project in action. The agent is inside the maze environment. </p>
 
-To get started with the motion planning project, follow these steps:
+## To get started with the motion planning project, follow these steps:
 
 1. Clone this repository:
   ```bash
