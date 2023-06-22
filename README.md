@@ -35,7 +35,7 @@ This project will focus on comparing the performance of search-based and samplin
 cd starter_code
 python3 main.py <planner-name>
 ```
-Replace <planner-name> with the following options:
+Replace &lt;planner-name> with the following options:
 - ```astar``` A* (Astar): Informed search algorithm with heuristic for optimal path planning.
 - ```rrt``` RRT (Rapidly-Exploring Random Tree): Randomized sampling-based motion planning algorithm.
 - ```rrt_star``` RRT* (Rapidly-Exploring Random Tree Star): Optimized version of RRT with improved path quality.
