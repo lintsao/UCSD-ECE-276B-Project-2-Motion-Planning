@@ -43,6 +43,7 @@ Replace &lt;planner-name> with the following options:
 - ```rrt_star_bid_h``` Bidirectional RRT* (with heuristic): Heuristic-guided variant of bidirectional RRT* algorithm.
 - ```rrt_connect``` RRT-Connect: Connecting trees variant of RRT for motion planning.
 
+or you could use main.ipynb to check the step-by-step implementation.
 ## Contributing
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
