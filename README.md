@@ -12,7 +12,7 @@ This project will focus on comparing the performance of search-based and samplin
 
 1. Clone this repository:
   ```bash
-  git clone https://github.com/homerun-beauty/UCSD-ECE-276B-Project-2-Motion-Planning.git
+  git clone https://github.com/lintsao/UCSD-ECE-276B-Project-2-Motion-Planning.git
   cd UCSD-ECE-276B-Project-2-Motion-Planning
   ```
 
